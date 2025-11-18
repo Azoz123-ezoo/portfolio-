@@ -33,7 +33,7 @@ header {
     color: #7cf03d;
     font-size: 1.8em;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -91,7 +91,9 @@ header {
     padding-top: 10px;
     text-decoration: none;
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 25px;
+    text-transform: capitalize;
     background-color: #7cf03d;
     color: #fff;
     border: 1px solid #fff;
@@ -160,8 +162,9 @@ header {
 }
 
 .img-info img {
+    box-shadow: 1px 1px 10px #7cf03d;
     width: 300px;
-    border-radius: 20px;
+    border-radius: 10px 100px ;
     border: 2px solid #7cf03d;
     transition: 0.5s;
 }
@@ -178,12 +181,27 @@ header {
     font-size: 1.2em;
     color: #7cf03d;
     margin-bottom: 10px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .info p {
     font-size: 1em;
     line-height: 1.6;
+}
+
+.box-info {
+    border: 1px solid #7cf03d;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 1px 1px 10px #7cf03d;
+    transition: 0.5s ease;
+
+}
+
+.box-info:hover {
+    transform: scale(1.05);
+
 }
 
 .Seirvecs .conteiner {
@@ -213,6 +231,8 @@ header {
     text-align: center;
     transition: 0.5s;
     border: 2px solid #7cf03d;
+
+    box-shadow: 1px 1px 10px #7cf03d;
 }
 
 .cards:hover {
@@ -264,6 +284,9 @@ header {
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
+    .mobile-menu{
+        visibility: hidden;
+    }
     .main {
         flex-direction: column-reverse;
         text-align: center;
@@ -274,6 +297,7 @@ header {
     }
 
     .hero-img img {
+
         width: 200px;
         height: 200px;
     }
@@ -296,7 +320,7 @@ header {
     }
 
     .main {
-        padding: 100px 20px;
+        padding: 120px 20px 100px 20px;
     }
 
     .hero-content h1 span {
@@ -337,3 +361,33 @@ header {
         max-width: 250px;
     }
 }
+/* 
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+إذا تم تفعيل الـ checkbox تظهر القائمة
+#menu-toggle:checked ~ .mobile-menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+     .navigtion ul li a{
+        visibility: hidden;
+    }
+    .menu-icon {
+        display: block;
+    }
+} */
